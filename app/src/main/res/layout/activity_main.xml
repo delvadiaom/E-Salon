@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/larrow" />
+
+            <TextView
+                android:id="@+id/addsalontxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Add a salon"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/enterdetailstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addsalontxt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Enter salon details"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/salonname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/enterdetailstxt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="Salon name"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/salonaddress"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/salonname"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="Salon address"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/salonaddress"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="City"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/city"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="Pincode"
+                android:inputType="number"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/pincode"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="State"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/selectservicetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/state"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Select your special service"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectservicetxt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/haircut"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Haircut"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@drawable/text_color_radiobutton"/>
+
+                <RadioButton
+                    android:id="@+id/scalpdetox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Scalp Detox"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@drawable/text_color_radiobutton"/>
+
+                <RadioButton
+                    android:id="@+id/shave"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Shave"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@drawable/text_color_radiobutton"/>
+
+                <RadioButton
+                    android:id="@+id/cleanup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Clean Up"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@drawable/text_color_radiobutton"/>
+                
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/selectsalontypetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radiogroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Please select your salon type"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectsalontypetxt"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Male"
+                    android:textColor="@drawable/text_color" />
+
+                <RadioButton
+                    android:id="@+id/unisex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Unisex"
+                    android:textColor="@drawable/text_color" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/salonimgtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radiogroup2"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Salon image"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/salonimg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/salonimgtxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/uploadimg" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/salonimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Submit"
+                android:fontFamily="@font/poppinsmedium"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

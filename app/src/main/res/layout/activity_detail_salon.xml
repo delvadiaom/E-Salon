@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailSalonActivity"
+    android:background="@color/detailback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/ic_baseline_chevron_left_24" />
+
+            <TextView
+                android:id="@+id/salonname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Salon Name"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/salonaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/salonname"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Salon Address"
+                android:textColor="@color/black" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/cardd"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@id/salonaddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/salonimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/specialserviceforthissalontxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special service for this salon"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_below="@id/cardd"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="17sp"/>
+
+            <RelativeLayout
+                android:id="@+id/servicerelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/salonfeatures"
+                android:layout_below="@id/specialserviceforthissalontxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/specialservice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Haircut"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/carddworkingtime"
+                app:cardCornerRadius="7dp"
+                android:layout_below="@id/servicerelative"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/workinghourstxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Working hours"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/wokinghourtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:00AM-08:00PM"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_below="@id/workinghourstxt"
+                        android:layout_marginLeft="15dp"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/barber"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/timeimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/carddworkingtime"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_baseline_access_time_24" />
+
+            <TextView
+                android:id="@+id/selectyourtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carddworkingtime"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/timeimg"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Select your time"
+                android:textColor="@color/black" />
+
+            <GridLayout
+                android:id="@+id/mainGridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectyourtime"
+                android:layout_marginTop="10dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3"
+                android:rowOrderPreserved="false"
+                tools:targetApi="ice_cream_sandwich">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:gravity="center"
+                        android:text="09:00 am"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin2"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="10:00 am"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin3"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="11:00 am"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin4"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="12:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin5"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="01:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin6"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="02:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin7"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="03:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin8"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+
+                    <TextView
+                        android:id="@+id/text8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="04:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin9"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+
+                    <TextView
+                        android:id="@+id/text9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="05:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin10"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="06:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin11"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+
+                    <TextView
+                        android:id="@+id/text11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="07:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin12"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" />
+
+                    <TextView
+                        android:id="@+id/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="08:00 pm"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/selectyourservice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainGridLayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Select your service"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <GridLayout
+                android:id="@+id/servicegridlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectyourservice"
+                android:layout_marginTop="10dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3"
+                android:columnOrderPreserved="false"
+                tools:targetApi="ice_cream_sandwich">
+
+                <CheckBox
+                    android:id="@+id/haircut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Haircut"
+                    android:textColor="@drawable/text_color" />
+
+                <CheckBox
+                    android:id="@+id/scalpdetox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Scalp Detox"
+                    android:textColor="@drawable/text_color" />
+
+                <CheckBox
+                    android:id="@+id/shave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Shave"
+                    android:textColor="@drawable/text_color" />
+
+                <CheckBox
+                    android:id="@+id/cleanup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Clean Up"
+                    android:textColor="@drawable/text_color" />
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/servicegridlayout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Button
+                    android:id="@+id/bookbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_below="@id/mainGridLayout"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/btnback"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Book Your Slot"
+                    android:textColor="@drawable/text_color_btn" />
+
+                <Button
+                    android:id="@+id/callsalon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_below="@id/mainGridLayout"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/btnbackforcall"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Call Staff"
+                    android:textColor="@drawable/text_color_btn_call" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

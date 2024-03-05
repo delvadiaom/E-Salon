@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardd"
+            app:cardCornerRadius="15dp"
+            android:background="?selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/buttonback">
+
+                        <ImageView
+                            android:id="@+id/salonimg"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/profilepic3"/>
+
+                        <TextView
+                            android:id="@+id/salonname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toEndOf="@id/salonimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Salon Name"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/salonaddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/salonname"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@id/salonimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Salon Address" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/salonfeatures"
+                            android:layout_below="@id/salonaddress"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_toEndOf="@id/salonimg">
+
+                                <TextView
+                                    android:id="@+id/salontype"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Scalp Detox"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black" />
+
+
+                        </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

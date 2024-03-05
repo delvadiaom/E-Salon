@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailSalonExActivity"
+    android:background="@color/detailback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/ic_baseline_chevron_left_24" />
+
+            <TextView
+                android:id="@+id/salonname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Salon Name"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/salonaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/salonname"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Salon Address"
+                android:textColor="@color/black" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/cardd"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@id/salonaddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/salonimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/timeimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/cardd"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_baseline_access_time_24" />
+
+            <TextView
+                android:id="@+id/selectyourtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardd"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/timeimg"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Select your time"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/radiorelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectyourtime">
+
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/white"
+                        android:elevation="4dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:padding="16dp"
+                        android:text="09:00 am"
+                        android:textColor="@drawable/text_color" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/white"
+                        android:elevation="4dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:padding="16dp"
+                        android:text="10:00 am"
+                        android:textColor="@drawable/text_color" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/white"
+                        android:elevation="4dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:padding="16dp"
+                        android:text="11:00 am"
+                        android:textColor="@drawable/text_color" />
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/white"
+                        android:elevation="4dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:padding="16dp"
+                        android:text="11:00 am"
+                        android:textColor="@drawable/text_color" />
+
+            </RadioGroup>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/selectyourservice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radiorelative"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Select your service"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <GridLayout
+                android:id="@+id/servicegridlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectyourservice"
+                android:layout_marginTop="10dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3"
+                android:columnOrderPreserved="false"
+                tools:targetApi="ice_cream_sandwich">
+
+                <CheckBox
+                    android:id="@+id/haircut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Haircut"
+                    android:textColor="@drawable/text_color" />
+
+                <CheckBox
+                    android:id="@+id/scalpdetox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Scalp Detox"
+                    android:textColor="@drawable/text_color" />
+
+                <CheckBox
+                    android:id="@+id/shave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Shave"
+                    android:textColor="@drawable/text_color" />
+
+                <CheckBox
+                    android:id="@+id/cleanup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/white"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="16dp"
+                    android:text="Clean Up"
+                    android:textColor="@drawable/text_color" />
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/servicegridlayout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <Button
+                    android:id="@+id/bookbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_below="@id/mainGridLayout"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/btnback"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Book Your Slot"
+                    android:textColor="@drawable/text_color_btn" />
+
+                <Button
+                    android:id="@+id/callsalon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_below="@id/mainGridLayout"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/btnbackforcall"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Call Staff"
+                    android:textColor="@drawable/text_color_btn_call" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

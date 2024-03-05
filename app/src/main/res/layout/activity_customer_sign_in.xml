@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerSignInActivity">
+
+    <TextView
+        android:id="@+id/textsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Let's Sign In"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textsignup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your username,email and password"
+        android:layout_below="@id/textsignup"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/textsignup2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttonbacknews"
+        android:fontFamily="@font/poppinsmedium"
+        android:hint="Username"
+        android:paddingLeft="15dp" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttonbacknews"
+        android:fontFamily="@font/poppinsmedium"
+        android:hint="Email"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/email"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttonbacknews"
+        android:fontFamily="@font/poppinsmedium"
+        android:hint="Password"
+        android:paddingLeft="15dp" />
+
+
+    <Button
+        android:id="@+id/signinbtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Sign In"
+        android:textColor="@drawable/text_color_btn"
+        android:backgroundTint="@color/btnback"/>
+
+    <TextView
+        android:id="@+id/orbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---------- Or ----------"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:layout_below="@id/signinbtn"
+        android:layout_marginTop="15dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/orbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/googleicon"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Sign Up With Google"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:cornerRadius="8dp"
+        app:strokeColor="@color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable-v24/buttonback.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable-v24/buttonbacknews.xml" value="0.19" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable-v24/salonfeatures.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable-v24/selectrolebtn.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable-v24/tab_corners_shape.xml" value="0.19" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable-v24/text_color_btn.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/btnback.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/buttonbackk.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/cardback.xml" value="0.2035" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/effect.xml" value="0.2035" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/googlebtnback.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/ic_baseline_chevron_left_24.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/img_back.xml" value="0.191" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/radio_selected.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/radio_selector.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/rectangle_fill.xml" value="0.191" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/rectangle_outline.xml" value="0.191" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/searchback.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/selectrole.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/text_color.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/text_color_btn_call.xml" value="0.2075" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/drawable/text_color_radiobutton.xml" value="0.2035" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_barber_home.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_barber_profile.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_barber_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_booking_done.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_customer_sign_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_customer_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_detail_salon.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_detail_salon_ex.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_show_salon.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_splash.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_view_all_clean_up.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_view_all_haircut_salon.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_view_all_man_salon.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_view_all_scalp_detox.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_view_all_shave.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/activity_view_all_unisex_salon.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/item_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/item_slot.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/lkl.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/row_salon.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/row_salon_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/row_salon_for_barber.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/row_service_detail.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/service_row.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyESalon/app/src/main/res/layout/your_bookings.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

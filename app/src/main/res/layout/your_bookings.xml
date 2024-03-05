@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:background="@drawable/buttonbacknews">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/profilepic" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/profilepic"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="User Name"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/selectedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@id/profilepic"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Booking Time" />
+
+    <TextView
+        android:id="@+id/selectedService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedTime"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@id/profilepic"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Service" />
+
+    <Button
+        android:id="@+id/cancelbooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/ic_baseline_cancel_24"
+        android:backgroundTint="@color/btnbackforcall"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Cancel"
+        android:textColor="@drawable/text_color_btn_call" />
+
+    <Button
+        android:id="@+id/bookbtn"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancelbooking"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/btnback"
+        android:drawableLeft="@drawable/ic_baseline_delete_24"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="End"
+        android:textColor="@drawable/text_color_btn" />
+
+
+</RelativeLayout>

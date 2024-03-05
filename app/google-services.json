@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "47615558098",
+    "project_id": "my-e-salon",
+    "storage_bucket": "my-e-salon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47615558098:android:74f42a6a0844811578c80b",
+        "android_client_info": {
+          "package_name": "com.degtu.myesalon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47615558098-so93f4mll2avepufbjep01t7m0odq5fa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_YLb45h00mm08K8yfuu4cAKLwWjYI_yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47615558098-so93f4mll2avepufbjep01t7m0odq5fa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

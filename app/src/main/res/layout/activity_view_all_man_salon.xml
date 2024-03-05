@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewAllManSalonActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="?selectableItemBackground"
+        android:src="@drawable/ic_baseline_chevron_left_24"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/back"
+        android:background="@drawable/searchback"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:hint="Search Salons"
+        android:paddingStart="10dp" />
+
+    <TextView
+        android:id="@+id/allmansalonstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchview"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="All man salons"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mansalons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/allmansalonstxt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        tools:listitem="@layout/row_salon_detail" />
+
+</RelativeLayout>

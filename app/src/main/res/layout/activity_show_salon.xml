@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowSalonActivity">
+
+    <TextView
+        android:id="@+id/whatyouarelookingfortxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What you are looking for?"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:textSize="17sp"/>
+
+    <GridLayout
+        android:id="@+id/mainGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whatyouarelookingfortxt"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        tools:targetApi="ice_cream_sandwich">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?selectableItemBackground"
+            app:cardElevation="-5dp">
+
+            <RelativeLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/haircut"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/haircut" />
+
+                <TextView
+                    android:id="@+id/haircutxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/haircut"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Haircut"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="-5dp">
+
+            <RelativeLayout
+                android:id="@+id/lin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/scalpdetoximg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/scalpdetox" />
+
+                <TextView
+                    android:id="@+id/scalpdetoxxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/scalpdetoximg"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Scalp Detox"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?selectableItemBackground"
+            app:cardElevation="-5dp">
+
+            <RelativeLayout
+                android:id="@+id/lin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/shaveimg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shave" />
+
+                <TextView
+                    android:id="@+id/shavetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shaveimg"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Shave"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?selectableItemBackground"
+            app:cardElevation="-5dp">
+
+            <RelativeLayout
+                android:id="@+id/lin4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cleanupimg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/facecleanup" />
+
+                <TextView
+                    android:id="@+id/cleanuptxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cleanupimg"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Clean Up"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?selectableItemBackground"
+            app:cardElevation="-5dp">
+
+            <RelativeLayout
+                android:id="@+id/lin4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cleanupimg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/hairdryer" />
+
+                <TextView
+                    android:id="@+id/cleanuptxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cleanupimg"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Clean Up"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/mansalonstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainGridLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Man Salons"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/viewalltxtmansalon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainGridLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="View All"
+        android:textColor="@color/activepermillion"
+        android:background="?selectableItemBackground"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mansalons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mansalonstxt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        tools:listitem="@layout/row_salon" />
+
+    <TextView
+        android:id="@+id/unisexsalonstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unisex Salons"
+        android:textSize="17sp"
+        android:layout_below="@id/mansalons"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/viewalltxtunisexsalon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mansalons"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="View All"
+        android:textColor="@color/activepermillion"
+        android:background="?selectableItemBackground"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/unisexsalons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/unisexsalonstxt"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/row_salon" />
+
+</RelativeLayout>

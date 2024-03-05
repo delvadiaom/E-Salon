@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My E Salon</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Unisex</item>
+    </string-array>
+</resources>

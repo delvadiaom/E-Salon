@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarberProfileActivity"
+    android:background="@color/detailback">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="?selectableItemBackground"
+        android:src="@drawable/larrow" />
+
+    <RelativeLayout
+        android:id="@+id/profilerelative"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/back"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttonbacknews"
+        android:elevation="14dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilepic"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/barbericon" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Email"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainaddrelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilerelative"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buttonbacknews">
+
+        <RelativeLayout
+            android:id="@+id/addsalonrelative"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/activepermillion" />
+
+            <TextView
+                android:id="@+id/addsalontxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/plusimg"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Add a salon"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/plusimg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/addicon" />
+
+            <ImageView
+                android:id="@+id/arrowimgaddsalon"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/rightarrow2" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/plusimg"
+                android:layout_marginLeft="57dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addspecialprofilerelative"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/addsalonrelative"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                android:id="@+id/addspecialprofiletxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/plusimgaddspecialprofile"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Add specialized barber profile"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/plusimgaddspecialprofile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/barberprofile" />
+
+            <ImageView
+                android:id="@+id/arrowimgaddsprcialprofile"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/rightarrow2" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
